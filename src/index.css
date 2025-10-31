@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background-color: #0f172a;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 🔹 React root container */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 🔹 Scrollbar özelleştirmesi */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* 🔹 Responsive küçük ekran optimizasyonu */
+@media (max-width: 768px) {
+  textarea {
+    width: 90% !important;
+  }
+
+  img {
+    max-width: 95% !important;
+  }
+}
